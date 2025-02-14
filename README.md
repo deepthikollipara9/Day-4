@@ -9,7 +9,7 @@
 
 ***Print fruits data in form of database***
 
-```sql
+```python
 import pandas as pd
 fru={'apples':30,'bananas':21}
 fruits=pd.Series(fru)
@@ -18,7 +18,7 @@ print(fruits)
 
 ***Adding index values***
 
-```sql
+```python
 import pandas as pd
 fru={'apples':(35,41),'bananas':(21,34)}
 fruits=pd.DataFrame.from_dict(fru,orient='index',columns=['2017 sales','2018 sales'])
@@ -27,7 +27,7 @@ print(fruits)
 
 ***Creating the ingredients needed***
 
-```sql
+```python
 import pandas as pd
 ind={'flour':'4 cups','milk':'1 cup','eggs':'2 large','spam':'1 can'}
 grocery=pd.Series(ind)
@@ -36,7 +36,7 @@ print(grocery)
 
 ***Creating the dataframe for animals***
 
-```sql
+```python
 import pandas as pd
 ani={'cow':[20,12],'goats':[22,19]}
 animals=pd.DataFrame.from_dict(ani,orient='index',columns=['year 1','year 2'])
@@ -45,7 +45,7 @@ print(animals)
 
 ***Display the dates***
 
-```sql
+```python
 import pandas as pd
 dates=pd.date_range(start='05-01-2021',end='05-12-2021')
 print(dates)
@@ -53,7 +53,7 @@ print(dates)
 
 ***Display the dates with index***
 
-```sql
+```python
 from datetime import date
 import pandas as pd
 import numpy as np
@@ -64,7 +64,7 @@ print(df)
 
 ***Displaying timestamp***
 
-```sql
+```python
 import pandas as pd
 import numpy as np
 
@@ -79,32 +79,32 @@ print(df2)
 
 ***Displaying datatype of frame***
 
-```sql
+```python
 print(df2.dtypes)
 ```
 
 ***Display data***
 
-```sql
+```python
 print(df2.head())
 ```
 
-```sql
+```python
 print(df2.tail(2))
 ```
 
-```sql
+```python
 print(df2.index)
 ```
 
-```sql
+```python
 print(df2.columns)
 ```
 
-```sql
+```python
 print(df2.to_numpy())
 ```
 
-```sql
+```python
 print(df2.describe())
 ```
